@@ -8,11 +8,11 @@
 void usage() {
 
 	printf("convert text to binary barcodes.\n");
-	printf("\t --help\tshow this usage.\n");
-	printf("\t -b, --bar <char>\tchar for bars.\n");
-	printf("\t -s, --space <char>\t char for spaces.\n");
-	printf("\t -w, --width <int>\t width for one element.\n");
-	printf("\t -d, --debug <int>\t debug level (0 only errors to 3 all infos).\n");
+	printf("\t -h, --help\t\tshow this usage.\n");
+	printf("\t -b, --bar <char>\tcharacter that represents the bars.\n");
+	printf("\t -s, --space <char>\tcharacter that represents the spaces.\n");
+	printf("\t -w, --width <int>\twidth that represents an element.\n");
+	printf("\t -d, --debug <int>\tsets the debug level (ERROR = 0; WARNING = 1; DEBUG = 2; INFO = 3).\n");
 	exit(3);
 }
 

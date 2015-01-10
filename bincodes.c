@@ -5,8 +5,8 @@
 #include "debug.h"
 #include "parse.h"
 
-#define BAR_CHAR 'l'
-#define SPACE_BAR 'z'
+#define BAR_CHAR '1'
+#define SPACE_BAR '0'
 #define BAR_WIDTH 3
 
 int main(int argc, char* argv[]) {
