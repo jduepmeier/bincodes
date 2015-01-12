@@ -22,7 +22,7 @@ void usage() {
 	printf("\tupc\t-\tupc == 12-digit ean\n");
 	printf("\tisbn\t-\tisbn numbers (still EAN13)\n");
 	printf("\t128\t-\tcode128 (a,b,c: autoselection)\n");
-	printf("\t128c\t-\tcode128 (compact form for digits\n");
+	printf("\t128c\t-\tcode128 (compact form for digits)\n");
 	printf("\t128b\t-\tcode128, full printable ascii\n");
 	printf("\ti25\t-\tinterleaved 2 of 5 (only digits)\n");
 	printf("\t128raw\t-\traw code 128 (by Leonid A. Broukhis)\n");
