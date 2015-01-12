@@ -15,12 +15,30 @@ make install
 # usage
 
 ```
--d, --debug <int>   sets the debug level (ERROR = 0; WARNING = 1; DEBUG = 2; INFO = 3).
--b, --bar <char>    character that represents the bars.
--s, --space <char>  character that represents the spaces.
--w, --width <int>   width that represents an element
--h, --help          show this usage.
+-c, --checksum        adds the checksum to the barcode.
+-e, --encoding <char> sets the encoding for the barcode. See encodings for valid ones.
+-d, --debug <int>     sets the debug level (ERROR = 0; WARNING = 1; DEBUG = 2; INFO = 3).
+-b, --bar <char>      character that represents the bars.
+-s, --space <char>    character that represents the spaces.
+-w, --width <int>     width that represents an element
+-h, --help            show this usage.
 ```
+# encodings
+
+Valid encodings are:
+* 39      - code39
+* ean     - european article number
+* upc     - upc == 12-digit ean
+* isbn    - isbn numbers (still EAN13)
+* 128     - code128 (a,b,c: autoselection)
+* 128c    - code128 (compact form for digets)
+* 128b    - code128, full printable ascii
+* i25     - interleaved 2 of 5 (only digits)
+* 128raw  - raw code 128 (by Leonid A. Broukhis)
+* cbr     - Codebar (by Leonid A. Broukhis)
+* msi     - MSI (by Leonid A. Broukhis)
+* pls     - Plessey (by Leonid A. Broukhis)
+* 93      - code93 (by Nathan D. Holmes)
 
 # examples
 
