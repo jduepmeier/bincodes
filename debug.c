@@ -33,6 +33,7 @@ void debug(int level, char* format, ...) {
 			before = "INFO: ";
 			break;
 		default:
+			va_end(va);
 			return;
 	}
 
