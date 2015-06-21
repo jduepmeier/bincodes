@@ -74,4 +74,6 @@ int parseArguments(int argc, char* argv[], Config* config) {
 		}
     
     	}
+
+	return 1;
 }
