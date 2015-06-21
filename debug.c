@@ -43,6 +43,8 @@ void debug(int level, char* format, ...) {
 	sprintf(output, "%s%s", before, format);
 
 	vprintf(output,va);
+
+	va_end(va);
 }
 
 void setDebugLevel(int level) {
