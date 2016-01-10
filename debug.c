@@ -11,6 +11,7 @@ void debug(int level, char* format, ...) {
         va_start(va, format);
 
 	if (debug_level < level) {
+		va_end(va);
 		return;
 	}
 
