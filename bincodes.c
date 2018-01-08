@@ -14,7 +14,7 @@
 unsigned int find_encoding(const char* encoding) {
 
 	if (!strcmp(encoding, "39")) {
-		return BARCODE_39;	
+		return BARCODE_39;
 	} else if (!strcmp(encoding, "ean")) {
 		return BARCODE_EAN;
 	} else if (!strcmp(encoding, "upc")) {
@@ -87,7 +87,6 @@ int main(int argc, char* argv[]) {
 
 
 	int i = 0;
-	int j = 0;
 	char* output = bc->partial;
 
 	debug(LOG_DEBUG,"textinfo: %s\nascii: %s\npartial: %s\n", bc->textinfo, bc->ascii, bc->partial);
@@ -99,7 +98,7 @@ int main(int argc, char* argv[]) {
 	while (output[i] != 0) {
 
 		if (flag) {
-			c = config.bar;	
+			c = config.bar;
 		} else {
 			c = config.space;
 		}
